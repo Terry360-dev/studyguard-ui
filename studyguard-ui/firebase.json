@@ -8,9 +8,33 @@
     ],
     "rewrites": [
       {
+        "source": "/health",
+        "function": "health"
+      },
+      {
+        "source": "/upload-syllabus",
+        "function": "upload_syllabus"
+      },
+      {
+        "source": "/generate-quiz",
+        "function": "generate_quiz"
+      },
+      {
+        "source": "/submit-answer",
+        "function": "submit_answer"
+      },
+      {
+        "source": "/risk-dashboard",
+        "function": "risk_dashboard"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }
     ]
+  },
+  "functions": {
+    "source": "functions",
+    "runtime": "python312"
   }
 }
